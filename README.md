@@ -29,7 +29,7 @@ CamPaint Class
 
 In my CamPaint class, starting with the processImage method, I used the  largest arraylist, which stored the largest region from the regionFinder method, and looped over each pixel of that region and recolored it. As for the handleMousePress, it checks if the image is not null and then sets the targetColor to be the color of the image. When it comes to the draw method, it draws a different appropriate image for each display mode. If it's displaymode, w, it draws the unedited webcam image, if it's the displaymode, r, it draws the recolored image, while if it is displaymode, p, it draws the painting of the selected region movement. 
   
-#B. Huffman Encoding Project
+# B. Huffman Encoding Project
   
   In this code, I used a good number of methods. Starting with the createFreqTable, I used this method to read from a passed-in file character by character and create a hashmap that contains each character as key and its frequency as a value. This method returns the created hashmap.
 In the meantime, I created a separate TreeComparator class that compares characters based on their frequencies. This TreeComparator class is used in creating a prority queue containing the characters.
