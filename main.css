@@ -1,0 +1,85 @@
+h1{
+    /*This is how we comment in css*/
+    text-align-last: center;
+    color:rgb(32, 64, 203);
+    font-size:10;
+
+}
+h2{
+    color:blue;
+    font-size:15;
+    text-align-last: center;
+}
+
+em{
+    color:blueviolet;
+}
+body{
+    background-color: #0e38e238;
+}
+.primary-footer a {
+  color: rgba(255, 255, 255, 0.436);
+}
+img {
+
+    background: #0c0c4f;
+    border: 5px solid #073f04;
+    float: left;
+    margin: 8px 0 0 20px;
+    max-width: 30%;
+}
+aside{
+    border: 5px solid #073f04;
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+    line-height: 50px;
+
+}
+header{
+    margin-top: 10px;
+    border: 5px solid #073f04;
+    float: left;
+    margin: 0 1.5%;
+    width: 5%;
+    line-height: 50px;
+}
+nav{
+    margin-top: 10px;
+    border: 5px solid #073f04;
+    float: left;
+    margin: 0 1.5%;
+    width: 5%;
+    line-height: 20px;
+}
+p{
+    
+    font-size:35;
+    text-align-last: right;
+    margin-top: 500px;
+
+}
+
+section{
+    font-size:145;
+    line-height: 50px;
+    text-align-last: center;
+    margin-top: 350px;
+}
+footer{
+    font-size:35;
+    text-align-last: left;
+    margin-top: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+  
+
