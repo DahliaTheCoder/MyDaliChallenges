@@ -28,3 +28,20 @@ As for the largestRegion method, it checks whether the regions arraylist is empt
 CamPaint Class
 
 In my CamPaint class, starting with the processImage method, I used the  largest arraylist, which stored the largest region from the regionFinder method, and looped over each pixel of that region and recolored it. As for the handleMousePress, it checks if the image is not null and then sets the targetColor to be the color of the image. When it comes to the draw method, it draws a different appropriate image for each display mode. If it's displaymode, w, it draws the unedited webcam image, if it's the displaymode, r, it draws the recolored image, while if it is displaymode, p, it draws the painting of the selected region movement. 
+  
+**  #B. Huffman Encoding Project**
+  
+  In this code, I used a good number of methods. Starting with the createFreqTable, I used this method to read from a passed-in file character by character and create a hashmap that contains each character as key and its frequency as a value. This method returns the created hashmap.
+In the meantime, I created a separate TreeComparator class that compares characters based on their frequencies. This TreeComparator class is used in creating a prority queue containing the characters.
+  
+That said, in the main Huffman class, the second method I used is "charPriorityQueue" that takes in a hashmap (typically the one created in the createFreqTable method), creates an object of TreeComparator class and a priorityqueue that uses the TreeComparator object to compare the characters based on which one has a higher frequency. Inside this method, with the use of a for-loop, an initial binary tree of the type Huffman is created for each character and it is stored in the priority queue named, "charPriorityQueue." Then it returns the completed charPriorityQueue.
+  
+Additionally, the third method used is "treeCreation" that takes in the priority queue created in the previous method, loops through this priority queue, removing the characters with the least frequencies of all and then use them as the left and right children of a new created binary tree. This binary tree is then added to the priority queue. After the while loop is done, the last tree in the updated priority queue is returned.
+  
+Moreover, there is a codeRetrieval method that takes in a binary tree (returned from the previous method). Inside this method, a new hashmap is created to contain characters as  keys and their codewords as values. This hashmap is passed to a helper method that traverses the tree and creates a codeword string made of 1s and 0s to represent each character. Then in the main method, the created hashmap is returned.
+
+Another method I had in this file is "compressionMethod" that takes in two filenames (one to read from and another to write to) and a hashmap (the one returned supposedly by the previous method). In this method, we use a while loop to read from the file character by character, and uses the hashMap to get the string codeword of that character, and then store it in a  string. Then, we loop through the created string word and store each character as a bit to the output file. When all the characters from the passed in file are done being analyzed, both files are closed.
+Furthermore, the last method I used is "decompressionMethod" that takes in the compressedfile name, an output file name, and a hashmap (supposedly the one created in the codeRetrieval method).  Inside this method, a while loop is used to read bit by bit from the compressedfile  and traverses the binary tree of characters (the one returned from the treeCreation method) following the 1s and 0s bits read from the compressedfile until it reaches a leaf and then it returns the character in that leaf. After each bit from the compressed file has been decoded into a character, then both files are closed.
+All in all, what this main file does is read from a passed in file and returns a coded compressed output file and allows one to get a decompressed file containing back the text in the original file after decoding the bits in the compressed file. 
+
+
