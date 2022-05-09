@@ -7,4 +7,4 @@ To execute this challenge, I used javascript, css, and html to build a website f
 
   Due to limited time and skills at the moment, I opted to build a basic website like this because I didn't have enough time to create a more advanced and better website.
   
-  
+  On that note, I also wanted to share that I started pursuing my major, computer sciences modified with engineering sciences, last term (W22). Consequently, I haven't had enough time and most importantly enough skills to work on extra curricular projects that I can submit as part of my application to DALI. That is why I decided to submit two of the projects that I have worked on as part of my CS10 assignments this term.
